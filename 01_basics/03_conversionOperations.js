@@ -1,4 +1,5 @@
 "use strict";
+// **********************************Conversion**************************************************
 
 let score="33";
 
@@ -25,6 +26,46 @@ let booleanIsLoggedIn=Boolean(isLoggedIn);
 
 let someNumber=33;
 let stringNumber=String(someNumber);
-console.log(stringNumber);
-console.log(typeof stringNumber);
+//console.log(stringNumber);
+//console.log(typeof stringNumber);
+
+
+
+// ***********************************************Operations**************************************************
+
+let value=3;
+let negValue=-value;
+//console.log(negValue);
+
+//console.log(2 + 2)
+//console.log(2 - 2)
+//console.log(2 * 2)
+//console.log(2 / 2)
+//console.log(2 % 3)
+//console.log(2 ** 10);
+
+let str1="hello";
+let str2=" Nirmalya";
+
+//console.log(str1+str2);
+//
+//console.log("1"+2);
+//console.log(1+"2");
+//console.log("1"+"2");
+//console.log("1"+2 + 3);
+//console.log(1 + 2 + "3"); 
+//
+//console.log(3+4%5-9*8); 
+//console.log(+true);
+//console.log(+"");
+//let num1,num2,num3;
+//num1=num2=num3=0;
+// note to self: dont write these kind of codes. it will not be accepted by companies.Always use parenthesis whenever possible.
+
+let gameCounter=100;
+gameCounter++;
+console.log(gameCounter);
+
+
+
 
