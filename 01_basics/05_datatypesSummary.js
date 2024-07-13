@@ -51,7 +51,7 @@ const functionVariable=function myFirstFunction(){
 
 
 
-/* ********************************* How does memory work in Javascript? *********************************
+/*********************************** How does memory work in Javascript? *********************************
 
 Types of memories:
 1.Stack(For primitive data types)
