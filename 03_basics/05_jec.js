@@ -1,4 +1,4 @@
-/*                              Javascript Environment Context (JEC)
+/*                              Javascript Execution Context (JEC)
 1. Javascript Execution Context means the way that js will run or execute whatever file we made.
 
 2. Suppose we have a set of code. The first execution context that will be formed is the Global Execution Context. Now the Global Execution Context is stored inside the "this" keyword. In browser, the window object is stored in the "this" keyword. This is the Global Execution Context in the browser. JS is single-threaded. This occurs in the thread.
