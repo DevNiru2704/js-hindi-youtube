@@ -58,6 +58,6 @@
               |                 num2 -> 2  (result2)                |   
               |                 total -> 12 (result2)               |
               |                                                     |     
-              +----Step 3b: The new environment is deleted and the total is returned to the  global
+              +----Step 3c: The new environment is deleted and the total is returned to the  global
                             environment.
 */
