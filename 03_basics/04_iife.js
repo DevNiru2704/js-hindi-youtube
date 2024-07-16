@@ -12,3 +12,4 @@
 
 ((name)=>(console.log(`Welcome, my name is ${name}`)))("Nirmalya");
 
+//note to self: Javascript is a single threaded programming language.
