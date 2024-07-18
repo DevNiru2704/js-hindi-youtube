@@ -109,6 +109,13 @@ const myCoding=[
     },
 ]
 
-myCoding.forEach((item)=>{
-    console.log(item.languageName)
-})
+// myCoding.forEach((item)=>{
+//     console.log(item.languageName)
+// })
+
+// const values=myCoding.forEach((item)=>{
+//     console.log(item.languageName)
+//     return item
+// })
+
+// console.log(values) //Result will be undefined because forEach does not return a value.
