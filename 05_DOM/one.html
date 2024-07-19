@@ -3,12 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learning on chai aur code</h1>
+<body class="bg-black">
+    <div >
+        <h1 id="title"  class="heading">DOM learning on chai aur code <span>test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, quis?</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
+    <script>
+        let title=document.getElementById("title") //Selects an element by its id name
+        title.id // displays id in the console
+        title.className //displays the classname in the console
+        title.getAttribute("class") //Displays the value of the selected attribute
+        title.setAttribute("class","not-a-title heading") //Can set the value of an attribute of a specific element 
+        title.style.backgroundColor='green' //Can style an element like css similar to inline styles
+        title.style.padding="5vw"
+        title.style.borderRadius="50px"
+        title.style.textAlign="center"
+        document.querySelector("#title span").style.display="none" //We can select any element using this. Its not restricted by anything. We can also use css comninators here to select a particular element.
+        document.querySelectorAll("h2").forEach((element) => {
+            element.style.backgroundColor = "blue";
+        });
+        document.querySelector("input").style.backgroundColor="blue"
+        document.querySelector("input").style.color="white"
+        title.textContent //Result = 'DOM learning on chai aur code test text' This command will not be affected by css.
+
+        title.innerHTML //Result = 'DOM learning on chai aur code <span style="display: none;">test text</span>'. This command return us the html format inside a particular element
+
+        title.innerText //Result= 'DOM learning on chai aur code'. This command will be affected by CSS
+
+        document.getElementsByClassName("heading") //Selects an element through its class name.
+
+        const myUl=document.querySelector("ul").style.color="purple"
+
+        const myliList=document.querySelectorAll("li") //This is not an array. This is a NodeList
+        const myliListarr=Array.from(myliList) //from function is used to convert NodeList to an Array.
+    </script>
 </body>
 </html>
