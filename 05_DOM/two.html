@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Code Aur Chai</title>
+    <style>
+        body{
+            background: #212121;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <script>
+        let parent=document.querySelector(".parent")
+        // console.log(parent)
+        // console.log(parent.children) //displays all the child element of a particular selected element
+        // console.log(parent.children[0]) //Access the 0th child of the parent element
+        // for(let i=0;i<=parent.children.length;i++){
+        //     console.log(parent.children[i])
+        // }
+
+        // console.log(parent.firstElementChild) //Returns the first child of the parent element
+        // console.log(parent.lastElementChild) //Returns the last child of the parent element
+        let dayOne=document.querySelector(".day:nth-child(1)")
+        // console.log(dayOne.parentElement) //Returns the parent element of the selected child element
+        // console.log(dayOne.nextElementSibling) //Return its sibling element
+
+        console.log("Nodes:",parent.childNodes)
+    </script>
+</body>
+</html>
