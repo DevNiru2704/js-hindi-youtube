@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM deleting elements</title>
+    <style>
+        body{
+            background: #212121;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        function addLanguage(langName){
+            let listItem=document.createElement("li")
+            listItem.innerText=`${langName}` //This line is not optimized for big number of function calls because the innerHTML is traversing the whole document for each function call.
+            document.querySelector(".language").appendChild(listItem)
+        }
+        addLanguage("Python")
+        addLanguage("Java")
+        addLanguage("C++")
+        addLanguage("C")
+
+        function addLanguageOptimized(langName){
+            let listItem=document.createElement("li")
+            listItem.appendChild(document.createTextNode(`${langName}`)) //Much more optimized for bigger number of function calls
+            document.querySelector(".language").appendChild(listItem)
+        }
+
+        addLanguageOptimized("Golang")
+        addLanguageOptimized("Ruby")
+
+
+        //Edit the 2nd item
+        const secondLanguage=document.querySelector("li:nth-child(2)")
+        // secondLanguage.innerHTML="HTML"
+        newLi=document.createElement("li")
+        newLi.textContent="HTML"
+        secondLanguage.replaceWith(newLi)
+
+        //Edit the 1st item
+        const firstLanguage=document.querySelector("li:first-child")
+        newLi=document.createElement("li")
+        newLi.textContent="CSS"
+        firstLanguage.replaceWith(newLi)
+
+        //remove
+
+        const lastLanguage=document.querySelector("li:last-child")
+        lastLanguage.remove()
+    </script>
+</body>
+</html>
