@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%
+}
+
+body{
+    background-color: #212121;
+    color:white;
+}
+h1{
+    text-align:center;
+    padding:2em;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+form div{
+    display:flex;
+    flex-direction: row;
+    gap:1em;
+}
+
+form div label{
+    font-size:1.5em;
+    font-weight:600;
+    cursor: pointer;
+}
+
+button{
+    padding:1.2rem;
+    border-radius:50px;
+    color:white;
+    background-color: blueviolet;
+    border:none;
+    cursor:pointer;
+    font-size:1.7rem;
+    font-weight: 700;
+}
+
+button:hover{
+    color:white;
+    background-color: rgb(95, 20, 165);
+}
+
+button:active{
+    transform: translateY(5%);
+}
+
+#result,#bmi-verdict{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align:center;
+}
+
+#result sup{
+    position:relative;
+    right:2rem;
+    font-size:1rem;
+}
+
+.bmi-guide{
+    display:flex;
+    flex-direction: column;
+}
+
+.bmi-guide h2{
+    font-size:2rem;
+}
+
+.bmi-guide li{
+    font-size:1.3rem;
+    list-style-type: none;
+}
+
+.bmi-guide span{
+    font-weight:1000;
+}
