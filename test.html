@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Origin Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 50px;
+            display: inline-block;
+        }
+        .default-origin {
+            transform: rotate(45deg);
+        }
+        .top-left-origin {
+            transform-origin: top left;
+            transform: rotate(45deg);
+        }
+        .bottom-right-origin {
+            transform-origin: bottom right;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box default-origin">Default Origin</div>
+    <div class="box top-left-origin">Top Left Origin</div>
+    <div class="box bottom-right-origin">Bottom Right Origin</div>
+</body>
+</html>
