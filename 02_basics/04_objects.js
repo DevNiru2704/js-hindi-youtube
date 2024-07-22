@@ -51,11 +51,36 @@ const users=[  //array of objects
 // console.log(tinderUser.hasOwnProperty("isLoggedIn"));
 
 
+
+
+/************************************************* DESTRUCTURING OBJECTS ************************************************/
+
 const course={
     courseName:"js in hindi",
     price:"999",
     courseInstructor:"hitesh"
 }
 
-const {courseInstructor: instructor}=course; //Using this syntax repetition of using the . operator or [""] can be avoided. It is not necessary to give another for a key value. We can directly use "const {courseInstructor}=course;" without the quotes and then just courseInstructor to use it.
-console.log(instructor);
+// const {courseInstructor: instructor}=course; //Using this syntax repetition of using the . operator or [""] can be avoided. It is not necessary to give another for a key value. We can directly use "const {courseInstructor}=course;" without the quotes and then just courseInstructor to use it. This is also known as destructuring of objects. We can also destructure an array using a similar syntax.
+
+// const {courseInstructor: instructor, price:cost, courseName:name}=course //Another way to destructure an object
+
+// console.log(instructor);
+// console.log(cost)
+// console.log(name)
+
+const {courseInstructor:instructor, ...course2}=course //use of spread operator to destructure an object. The only catch is that whatever key we gave in the beginning will be separated from the object and the rest of the key value pairs will be stored in an another object.
+
+// console.log(instructor)
+// console.log(course2)
+
+// const person = { name: 'Alice' };
+// const { name, age = 30 } = person; //Setting default values for missing keys
+// console.log(name); // Alice
+// console.log(age); // 30
+
+// const person = { name: 'Alice', address: { city: 'Wonderland', zip: 12345 } }; //Destructuring nested objects
+// const { address: { city, zip } } = person;
+// console.log(city); // Wonderland
+// console.log(zip); // 12345
+
