@@ -5,13 +5,14 @@ const mySym=Symbol("key")
 const jsUser={
     name:"Nirmalya", //key value pairs
     "full name": "Nirmalya Mandal",  //can't access using the . operator. Use jsUser.["full name"]\
-    [mySym]:"key2", //Synatax of symbol
+    [mySym]:"key2", //Syntax of showing the value of the key if present like mySym=Symbol("key"). So it will show [Symbol(key)]: 'key2'
     age:"19",
     location:"Kolkata",
     email:"nirmalya@mail.com",
     isLoggedIn:false,
     lastLoginDays:["Monday","Saturday"]
 }
+
 
 //ways to access key value pairs of an object
 
