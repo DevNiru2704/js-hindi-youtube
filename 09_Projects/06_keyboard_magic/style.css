@@ -46,6 +46,10 @@ p{
     color:black;
 }
 
+#touchstart{
+    
+}
+
 @media(max-width:680px){
 
     p{
