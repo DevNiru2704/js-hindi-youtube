@@ -5,7 +5,7 @@ function User(username,age,isLoggedIn){
 }
 
 const userOne = new User("Nirmalya Mandal",19,true)
-const userTwo = new User("Sayantan Sarkar",60,false) //if we don't give the new keyword, userTwo will overwrite userOne.
+const userTwo = new User("Ram Sardar",60,false) //if we don't give the new keyword, userTwo will overwrite userOne.
 const userThree=new Promise(function(resolve,reject){})
 console.log(userOne instanceof User) //true
 console.log(userTwo instanceof User) //true
